@@ -34,7 +34,7 @@ namespace automationpractice
         public string GetSuccessMessage()
         {
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-            return Actions.buscarIds(driver, "center_column").Text;
+            return Actions.buscarXpath(driver, "//*[@id=\"center_column\"]/p").Text;
 
         }
     }
